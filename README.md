@@ -1,7 +1,9 @@
 # TensorFlow Object Detection API v2
 ## Setup TensorFlow Object Detection API v2
 
-[Follow these steps](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md)
+
+__[Follow these steps](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md)__
+
 
 > [!NOTE]
 > To use `protoc` command, [install it](https://github.com/protocolbuffers/protobuf/releases) - scroll down to assets
@@ -16,7 +18,17 @@
 
 * Choose dataset what model should recognize
 * Make annotation (label), [recommend to use Label Studio](https://github.com/HumanSignal/label-studio)
-* Export annotation in certain format (xml, csv, tfrecord etc)
+* Export annotation in choosen format (xml, csv, tfrecord etc)
+
+> [!NOTE]
+> To convert images and annotation file into tfrecord use [this script]() and command below
+> ```
+> python generate_tfrecords.py \
+>     --path_to_images=${PATH_TO_IMAGES} \
+>     --path_to_annot=${PATH_TO_ANNOTATION} \
+>     --path_to_label_map=${PATH_TO_LABEL_MAP} \
+>     --path_to_save_tfrecords=${PATH_TO_SAVE_TFRECORD}
+> ```
 
 ## Pretrained model
 
@@ -49,7 +61,7 @@ python object_detection/model_main_tf2.py \
 
 ## Export and Convert the model
 
-### Save
+### Export
 
 ```
 python object_detection/exporter_main_v2.py \
