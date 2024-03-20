@@ -21,7 +21,7 @@ __[Follow these steps](https://github.com/tensorflow/models/blob/master/research
 * Export annotation in choosen format (xml, csv, tfrecord etc)
 
 > [!NOTE]
-> To convert images and annotation file into tfrecord use __[generate_tfrecords.py]__(https://github.com/MrZend/tensorflow-v2-API/blob/main/generate_tfrecords.py) script and command below
+> To convert images and annotation file into tfrecord use __[generate_tfrecords.py](https://github.com/MrZend/tensorflow-v2-API/blob/main/generate_tfrecords.py)__ script and command below
 > ```
 > python generate_tfrecords.py \
 >     --path_to_images=${PATH_TO_IMAGES} \
