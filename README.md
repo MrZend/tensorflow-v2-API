@@ -62,6 +62,9 @@ python object_detection/model_main_tf2.py \
 ## Export and Convert the model
 
 ### Export
+> [!NOTE]
+> [problem](https://stackoverflow.com/questions/72201667/tensorflow-convert-from-pb-to-tflite-failes-due-to-ops-error)
+
 
 ```
 python object_detection/exporter_main_v2.py \
